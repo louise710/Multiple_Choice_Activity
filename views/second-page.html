@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="nickname"></p>
+    <div id="timer">00:00</div>
+    <p id="question"></p>
+        <div id="choices"></div>
+        <button id="nxt-btn">Next Questions</button>
+    <form method="POST" action="../logic/second-page.php">
+        <input type="hidden" id="nicknameID" name="nicknameID">
+        <input type="hidden" id="total-score" name="total-score">
+        <input type="hidden" id="total-time" name="total-time">
+        <button id="submit-btn" type="submit" style="display: none;">Submit</button>
+    </form>
+    
+    <script src="../asset/js/questions.js"></script>
+</body>
+</html>
